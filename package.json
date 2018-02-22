@@ -1,0 +1,73 @@
+{
+	"name": "generator-willyb-web",
+	"version": "0.0.0",
+	"description":
+		"A generator I made to make me webapps with what I want in them.",
+	"homepage": "https://williamblythe.info",
+	"author": {
+		"name": "willyb321",
+		"email": "wbwilliam7@gmail.com",
+		"url": "https://williamblythe.info"
+	},
+	"files": ["generators"],
+	"main": "generators/index.js",
+	"keywords": ["express", "ts", "pug", "sass"],
+	"devDependencies": {
+		"@types/eslint": "^4.16.0",
+		"@types/eslint-plugin-prettier": "^2.2.0",
+		"@types/jest": "^22.1.3",
+		"@types/node": "^9.4.6",
+		"@types/prettier": "^1.10.0",
+		"@types/yeoman-generator": "^2.0.1",
+		"@types/yeoman-test": "^1.7.3",
+		"@types/yosay": "^0.0.29",
+		"eslint": "^4.1.0",
+		"eslint-config-prettier": "^2.4.0",
+		"eslint-config-xo": "^0.20.1",
+		"eslint-plugin-prettier": "^2.2.0",
+		"husky": "^0.14.3",
+		"jest": "^22.0.6",
+		"lint-staged": "^7.0.0",
+		"nsp": "^3.2.1",
+		"prettier": "^1.7.0",
+		"yeoman-assert": "^3.1.0",
+		"yeoman-test": "^1.7.0"
+	},
+	"dependencies": {
+		"yeoman-generator": "^2.0.1",
+		"chalk": "^2.1.0",
+		"yosay": "^2.0.1"
+	},
+	"jest": {
+		"testEnvironment": "node"
+	},
+	"scripts": {
+		"prepublish": "nsp check",
+		"pretest": "eslint .",
+		"precommit": "lint-staged",
+		"test": "jest"
+	},
+	"lint-staged": {
+		"*.js": ["eslint --fix", "git add"],
+		"*.json": ["prettier --write", "git add"]
+	},
+	"eslintConfig": {
+		"extends": ["xo", "prettier"],
+		"env": {
+			"jest": true,
+			"node": true
+		},
+		"rules": {
+			"prettier/prettier": [
+				"error",
+				{
+					"singleQuote": true,
+					"printWidth": 90
+				}
+			]
+		},
+		"plugins": ["prettier"]
+	},
+	"repository": "willyb321/generator-willyb-web",
+	"license": "MIT"
+}

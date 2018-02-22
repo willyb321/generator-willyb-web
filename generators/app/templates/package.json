@@ -1,0 +1,53 @@
+{
+	"name": "fileupserve",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"start": "nodemon lib/bin/www.js",
+		"build": "tsc",
+		"lint": "",
+		"lint:fix": "",
+		"watch": "tsc -w",
+		"dev": "concurrently \"tsc -w\" \"npm run start\""
+	},
+	"dependencies": {
+		"body-parser": "^1.18.2",
+		"cookie-parser": "^1.4.3",
+		"debug": "^3.1.0",
+		"express": "^4.16.2",
+		"file-url": "^2.0.2",
+		"fs-extra": "^4.0.2",
+		"lodash": "^4.17.5",
+		"mongoose": "^4.13.5",
+		"dotenv": "^5.0.0",
+		"morgan": "^1.9.0",
+		"multer-gridfs-storage": "^2.1.0",
+		"node-sass-middleware": "0.11.0",
+		"pug": "2.0.0-rc.4",
+		"response-time": "^2.3.2",
+		"serve-favicon": "^2.4.5",
+		"shortid": "^2.2.8",
+		"source-map-support": "^0.5.0"
+	},
+	"devDependencies": {
+		"@types/body-parser": "^1.16.8",
+		"@types/cookie-parser": "^1.4.1",
+		"@types/debug": "^0.0.30",
+		"@types/dotenv": "^4.0.2",
+		"@types/express": "^4.0.39",
+		"@types/fs-extra": "^4.0.5",
+		"@types/lodash": "^4.14.86",
+		"@types/mongoose": "^4.7.28",
+		"@types/morgan": "^1.7.35",
+		"@types/node": "^8.0.53",
+		"@types/node-sass-middleware": "^0.0.30",
+		"@types/pug": "^2.0.4",
+		"@types/response-time": "^2.3.2",
+		"@types/serve-favicon": "^2.2.30",
+		"@types/shortid": "^0.0.29",
+		"@types/source-map-support": "^0.4.0",
+		"concurrently": "^3.5.1",
+		"nodemon": "^1.12.1",
+		"typescript": "^2.7.0-dev.20171201"
+	}
+}
