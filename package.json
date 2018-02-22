@@ -9,7 +9,6 @@
 		"email": "wbwilliam7@gmail.com",
 		"url": "https://williamblythe.info"
 	},
-	"files": ["generators"],
 	"main": "generators/index.js",
 	"keywords": ["express", "ts", "pug", "sass"],
 	"devDependencies": {
