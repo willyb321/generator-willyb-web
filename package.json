@@ -1,8 +1,7 @@
 {
 	"name": "generator-willyb-web",
 	"version": "0.0.0",
-	"description":
-		"A generator I made to make me webapps with what I want in them.",
+	"description": "A generator I made to make me webapps with what I want in them.",
 	"homepage": "https://williamblythe.info",
 	"author": {
 		"name": "willyb321",
@@ -10,7 +9,12 @@
 		"url": "https://williamblythe.info"
 	},
 	"main": "generators/index.js",
-	"keywords": ["express", "ts", "pug", "sass"],
+	"keywords": [
+		"express",
+		"ts",
+		"pug",
+		"sass"
+	],
 	"devDependencies": {
 		"@types/eslint": "^4.16.0",
 		"@types/eslint-plugin-prettier": "^2.2.0",
@@ -41,30 +45,7 @@
 		"testEnvironment": "node"
 	},
 	"scripts": {
-		"prepublish": "nsp check",
-		"pretest": "eslint .",
-		"precommit": "lint-staged"
-	},
-	"lint-staged": {
-		"*.js": ["eslint --fix", "git add"],
-		"*.json": ["prettier --write", "git add"]
-	},
-	"eslintConfig": {
-		"extends": ["xo", "prettier"],
-		"env": {
-			"jest": true,
-			"node": true
-		},
-		"rules": {
-			"prettier/prettier": [
-				"error",
-				{
-					"singleQuote": true,
-					"printWidth": 90
-				}
-			]
-		},
-		"plugins": ["prettier"]
+		"prepublish": "nsp check"
 	},
 	"repository": "willyb321/generator-willyb-web",
 	"license": "MIT"
